@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+         h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+        .container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+        .form {
+    display: flex;
+    flex-direction: column;
+}
+        .formgroup {
+    margin-bottom: 20px;
+}
+        .formgroup input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 95%;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #931e54;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+            <h2>Student Registration</h2>
+            <div class="formgroup">
+                <input type="text" placeholder="Full Name" required> <br>
+            </div>
+            <div class="formgroup">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="formgroup">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="formgroup">
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <div class="formgroup">
+                <input type="number" placeholder="Contact Number" required>
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="College Name" required>
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Degree" required>
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="USN" required>
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Skills (comma separated)" required>
+            </div>
+            <div class="formgroup">
+                <button type="submit">Register</button>
+            </div>
+            <p>Already have an account? <a href="student_login.html">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>
